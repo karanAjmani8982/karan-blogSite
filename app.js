@@ -11,7 +11,7 @@ const app = express();
 mongoose
   .connect(
     "mongodb+srv://karanBlog:" +
-      // process.env.MONGO_ATLAS_PW +
+      process.env.MONGO_ATLAS_PW +
       "@cluster0.zirect0.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
